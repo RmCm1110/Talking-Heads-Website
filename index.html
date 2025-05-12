@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - QuickStart Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: QuickStart
+  * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="C:\Users\johnm\Desktop\QuickStart\QuickStart\QuickStart\assets\img\Talking Heads Logo.jpeg" alt="Talking Heads Logo">
+        <h1 class="sitename">A Fanpage for Talking Heads!</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+          <li><a href="index.html#about">History</a></li>
+          <li><a href="index.html#features">Live Performances</a></li>
+          <li><a href="index.html#services">Legacy and Influence</a></li>
+                <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="https://en.wikipedia.org/wiki/Talking_Heads_discography">Discography</a></li>
+              <li class="dropdown"><a href="https://en.wikipedia.org/wiki/Talking_Heads"><span>Deep Dive</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="https://genius.com/Talking-heads-psycho-killer-lyrics">Lyrics</a></li>
+                  <li><a href="https://youtu.be/sLZGdiXOSWQ">Interviews</a></li>
+                  <li><a href="https://youtu.be/KeDf-1Wr-Ks">Behind the Scenes</a></li>
+                  <li><a href="https://youtu.be/8al5cSQNmME">"Life During Wartime"</a></li>
+                  <li><a href="https://www.reddit.com/r/talkingheads/comments/kn0p2y/a_talking_heads_drawing_i_made_2_years_ago/">Fan Art</a></li>
+                </ul>
+              </li>
+              <li><a href="https://www.google.com/search?q=talking+heads+band+members+descriptions&sca_esv=9106769aa707a896&biw=1528&bih=738&sxsrf=AHTn8zpFc9CfGSFm9ix_gCgHjnrwZx8XGg%3A1745806330655&ei=-uMOaP3kJ9eC2roP5d2oyAg&ved=0ahUKEwj9yb2x0_mMAxVXgVYBHeUuCokQ4dUDCBA&uact=5&oq=talking+heads+band+members+descriptions&gs_lp=Egxnd3Mtd2l6LXNlcnAiJ3RhbGtpbmcgaGVhZHMgYmFuZCBtZW1iZXJzIGRlc2NyaXB0aW9uczIFECEYoAFI4VBQvw9Y6k9wCHgBkAEAmAFfoAHAEaoBAjMzuAEDyAEA-AEBmAIpoAKBE6gCEMICBxAjGCcY6gLCAgoQIxjwBRgnGOoCwgINECMY8AUYJxjJAhjqAsICFxAuGIAEGJECGLQCGMgDGIoFGOoC2AEBwgIXEC4YgAQY4wQYtAIYyAMY6QQY6gLYAQHCAhoQLhiABBjjBBjUAhi0AhjIAxjpBBjqAtgBAcICChAjGIAEGCcYigXCAgQQIxgnwgIKEC4YgAQYQxiKBcICDRAuGIAEGEMY1AIYigXCAgUQABiABMICBRAuGIAEwgIZEC4YgAQYQxiKBRiXBRjcBBjeBBjfBNgBAcICChAuGIAEGCcYigXCAgoQABiABBhDGIoFwgISEC4YgAQY0QMYQxjHARiKBRgKwgIOEC4YgAQYxwEYjgUYrwHCAgcQLhiABBgKwgIHEAAYgAQYCsICDRAuGIAEGMcBGAoYrwHCAigQLhiABBgKGJcFGNwEGN4EGN8EGPQDGPEDGPUDGPYDGPcDGPgD2AEBwgIKEAAYgAQYFBiHAsICCxAAGIAEGJECGIoFwgILEC4YgAQYxwEYrwHCAgsQLhiABBiRAhiKBcICBhAAGBYYHsICCxAAGIAEGIYDGIoFwgIIEAAYgAQYogTCAgUQABjvBcICBxAhGKABGArCAgUQIRifBZgDDfEFVQaI4qKBv266BgYIARABGAiSBwQ0MC4xoAex2QOyBwQzMi4xuAfREg&sclient=gws-wiz-serp">Band Members</a></li>
+            </ul>
+          </li>
+          <li><a href="https://www.facebook.com/nimfa.cipres">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Explore</a>
+
+    </div>
+  </header>
+
+  <header>
+
+    <main class="main">
+  
+      <!-- Hero Section -->
+      <section id="hero" class="hero section">
+        <div class="hero-bg">
+          <img src="assets/img/talking-heads-bg.webp" alt="Talking Heads Background">
+        </div>
+        <div class="container text-center">
+          <div class="d-flex flex-column justify-content-center align-items-center">
+            <h1 data-aos="fade-up">Welcome to <span>Talking Heads</span></h1>
+            <p data-aos="fade-up" data-aos-delay="100">Same as it ever was...<br></p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#about" class="btn-get-started">This Must Be the Place</a>
+              <a href="https://www.youtube.com/watch?v=5IsSpAOD6K8" class="glightbox btn-watch-video d-flex align-items-center">
+                <i class="bi bi-play-circle"></i><span>Watch "Once in a Lifetime"</span>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+      </section><!-- /Hero Section -->
+
+  <!-- Featured Services Section -->
+<section id="featured-services" class="featured-services section light-background">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-lightning-charge"></i></div>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Innovative</a></h4>
+            <p class="description">Pioneers of art rock and new wave, Talking Heads constantly pushed the boundaries of sound and performance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-music-note-beamed"></i></div>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Rhythmic</a></h4>
+            <p class="description">With infectious grooves and global influences, their music moves both the body and the mind.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item d-flex">
+          <div class="icon flex-shrink-0"><i class="bi bi-eye"></i></div>
+          <div>
+            <h4 class="title"><a href="#" class="stretched-link">Visionary</a></h4>
+            <p class="description">From surreal lyrics to theatrical visuals, Talking Heads created a world uniquely their own.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <h3>Once In A Lifetime</h3>
+            <p class="fst-italic">
+              Talking Heads was an American rock band formed in 1975 in New York City, featuring David Byrne, Chris Frantz, Tina Weymouth, and Jerry Harrison. Known for their blend of punk, art rock, funk, and world music influences, they quickly gained fame for their quirky style and innovative sound. Their breakthrough came with the album Talking Heads: 77 and hits like "Psycho Killer." Over the years, albums like Remain in Light and Speaking in Tongues showcased their experimental spirit. Their energetic live performances, captured in the acclaimed concert film Stop Making Sense, solidified their legacy as one of the most influential bands of their era.
+            </p>
+            <a href="https://youtu.be/dQw4w9WgXcQ" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <img src="C:\Users\johnm\Desktop\QuickStart\QuickStart\assets\img\Talking Heads Group Photo.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
+                    <img src="C:\Users\johnm\Desktop\QuickStart\QuickStart\assets\img\hqdefault.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="C:\Users\johnm\Desktop\QuickStart\QuickStart\assets\img\SMSBigSuit-MAIN1.webp" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+  
+
+   <!-- Features Section -->
+<section id="features" class="features section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Live Performances</h2>
+    <p>Three unforgettable concerts that captured the energy, innovation, and evolution of Talking Heads.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row justify-content-between">
+
+      <div class="col-lg-5 d-flex align-items-center">
+
+        <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+              <i class="bi bi-camera-video"></i>
+              <div>
+                <h4 class="d-none d-lg-block">Stop Making Sense (1983)</h4>
+                <p>
+                  Recorded at Hollywood's Pantages Theatre, this groundbreaking concert film—directed by Jonathan Demme—blended theatricality with raw musical brilliance, beginning with David Byrne and a boombox and building toward a full-band spectacle.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+              <i class="bi bi-globe-americas"></i>
+              <div>
+                <h4 class="d-none d-lg-block">Rome, Italy (1980)</h4>
+                <p>
+                  This electric performance captured the band at their artistic peak during the *Remain in Light* tour, showcasing their expanded lineup and Afrobeat-influenced rhythms. A fan favorite for its raw energy and tight musicianship.
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+              <i class="bi bi-building"></i>
+              <div>
+                <h4 class="d-none d-lg-block">CBGB, New York (1975)</h4>
+                <p>
+                  One of their earliest shows, performed at the legendary punk club CBGB. Sparse, nervous, and fresh, this performance helped establish Talking Heads as a standout voice in the burgeoning New York underground scene.
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul><!-- End Tab Nav -->
+
+      </div>
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="tab-pane fade active show" id="features-tab-1">
+                <iframe width="560" height="315" src="https://youtu.be/YuSsCRUXGOU" 
+                  title="YouTube video player" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                      picture-in-picture; web-share" allowfullscreen>
+                </iframe>
+                
+              </div><!-- End Tab Content Item -->
+
+              <div class="tab-pane fade" id="features-tab-2">
+                <img src="assets/img/tabs-2.jpg" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+
+              <div class="tab-pane fade" id="features-tab-3">
+                <img src="assets/img/tabs-3.jpg" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+   <!-- Features Details Section -->
+<section id="features-details" class="features-details section">
+
+  <div class="container">
+
+    <!-- Song 1 -->
+    <div class="row gy-4 justify-content-between features-item">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <img src="C:\Users\johnm\Desktop\QuickStart\QuickStart\QuickStart\assets\img\Once in a lifetime.jpg" class="img-fluid" alt="Once in a Lifetime">
+      </div>
+
+      <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="content">
+          <h3>“Once in a Lifetime” (1980)</h3>
+          <p>
+            A surreal, philosophical anthem blending Afrobeat rhythms with existential lyrics. David Byrne’s preacher-like delivery and the song’s hypnotic repetition explore themes of identity, routine, and disorientation in modern life.
+          </p>
+          <a href="https://youtu.be/5IsSpAOD6K8" class="btn more-btn">Learn More</a>
+        </div>
+      </div>
+
+    </div><!-- Features Item -->
+
+    <!-- Song 2 -->
+    <div class="row gy-4 justify-content-between features-item">
+
+      <div class="col-lg-6 order-lg-2" data-aos="fade-up" data-aos-delay="100">
+        <img src="C:\Users\johnm\Desktop\QuickStart\QuickStart\QuickStart\assets\img\This must be the place.jpg" class="img-fluid" alt="This Must Be the Place">
+      </div>
+
+      <div class="col-lg-5 d-flex align-items-center order-lg-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="content">
+          <h3>“This Must Be the Place (Naive Melody)” (1983)</h3>
+          <p>
+            An emotional, stripped-down love song unlike any other in their catalog. Its simple melody and sincere lyrics reveal a vulnerable side of the band, making it a cult favorite and one of their most beloved tracks.
+          </p>
+          <a href="https://youtu.be/Fb2q141rMNE" class="btn more-btn">Learn More</a>
+        </div>
+      </div>
+
+    </div><!-- Features Item -->
+
+  </div>
+
+</section>
+
+
+      </div>
+
+    </section><!-- /Features Details Section -->
+
+    <!-- Influences Section -->
+<section id="services" class="services section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Legacy & Influence</h2>
+    <p>How Talking Heads shaped music, art, and performance for generations to come.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row g-5">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item item-cyan position-relative">
+          <i class="bi bi-activity icon"></i>
+          <div>
+            <h3>Genre Fusion</h3>
+            <p>Talking Heads blended punk, funk, world music, and art rock—paving the way for artists like LCD Soundsystem and St. Vincent.</p>
+            <a href="https://youtu.be/PEn1A0Cp1cI?si=NF4_9kDdBJzWswkD" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item item-orange position-relative">
+          <i class="bi bi-broadcast icon"></i>
+          <div>
+            <h3>Visual Storytelling</h3>
+            <p>From stop-motion videos to iconic suits, their aesthetic influenced artists like Radiohead and David Bowie’s later works.</p>
+            <a href="https://youtu.be/sLZGdiXOSWQ?si=yCQ7951KnqA50cfq" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item item-teal position-relative">
+          <i class="bi bi-easel icon"></i>
+          <div>
+            <h3>Art School Ethos</h3>
+            <p>David Byrne’s cerebral approach inspired indie artists like Arcade Fire and Vampire Weekend to embrace eccentricity and experimentation.</p>
+            <a href="https://youtu.be/2nInQoboxh4?si=Baf-YXQAfv8sUwlq" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item item-red position-relative">
+          <i class="bi bi-bounding-box-circles icon"></i>
+          <div>
+            <h3>Live Performances</h3>
+            <p>Their Stop Making Sense concert film redefined what a live show could be—echoed today by artists like Beyoncé and Childish Gambino.</p>
+            <a href="https://youtu.be/vtX6emk6U5k?si=FLEVcwKy4gMhKRsP" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-item item-indigo position-relative">
+          <i class="bi bi-calendar4-week icon"></i>
+          <div>
+            <h3>Lyrical Ambiguity</h3>
+            <p>Byrne's poetic yet disjointed lyrics opened space for bands like The National and Bon Iver to explore abstract emotionality.</p>
+            <a href="https://youtu.be/Rauu_MNZXgo?si=_RFIepQLFRLTBxDX" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-item item-pink position-relative">
+          <i class="bi bi-chat-square-text icon"></i>
+          <div>
+            <h3>Post-Punk Legacy</h3>
+            <p>They helped define the post-punk movement, shaping the sounds of bands from Talking Heads contemporaries to modern revivalists.</p>
+            <a href="https://youtu.be/XIW4skg3Ceo?si=gDKjNQ9wOTnjYodO" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div><!-- End Item -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Influences Section -->
+
+
+   <!-- Neurodiversity Section -->
+<section id="more-features" class="more-features section">
+
+  <div class="container">
+
+    <div class="row justify-content-around gy-4">
+
+      <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+        <h3>David Byrne and Autism: A Different Way of Seeing</h3>
+        <p>David Byrne has spoken publicly about being on the autism spectrum. Rather than a limitation, his neurodivergence has been a powerful lens through which he approaches music, visuals, and human behavior—offering something truly original to the world.</p>
+
+        <div class="row">
+
+          <div class="col-lg-6 icon-box d-flex">
+            <i class="bi bi-easel flex-shrink-0"></i>
+            <div>
+              <h4>Hyperfocus as a Gift</h4>
+              <p>Byrne’s intense focus on rhythm, architecture, and structure helped shape the intricate soundscapes of Talking Heads.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="col-lg-6 icon-box d-flex">
+            <i class="bi bi-patch-check flex-shrink-0"></i>
+            <div>
+              <h4>Unique Social Insight</h4>
+              <p>Though socially reserved, Byrne translates complex social rituals into sharp, ironic lyrics—turning observation into commentary.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="col-lg-6 icon-box d-flex">
+            <i class="bi bi-brightness-high flex-shrink-0"></i>
+            <div>
+              <h4>Visual Thinking</h4>
+              <p>His performances and stage designs often emerge from visual thinking, enabling immersive, unforgettable concert experiences.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+          <div class="col-lg-6 icon-box d-flex">
+            <i class="bi bi-lightbulb flex-shrink-0"></i>
+            <div>
+              <h4>Reframing the Narrative</h4>
+              <p>By speaking candidly about his neurodivergence, Byrne helps challenge the stigma and redefine what brilliance can look like.</p>
+            </div>
+          </div><!-- End Icon Box -->
+
+        </div>
+
+      </div>
+
+      <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+        <img src="C:\Users\johnm\Desktop\QuickStart\QuickStart\QuickStart\assets\img\Autism David.png" alt="David Byrne with expressive gestures on stage">
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Neurodiversity Section -->
+
+   <!-- FAQ Section -->
+<section id="faq" class="faq section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Frequently Asked Interview Questions</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="faq-container">
+
+          <div class="faq-item faq-active">
+            <h3>Why did Talking Heads decide to stop making music together?</h3>
+            <div class="faq-content">
+              <p>There wasn’t a dramatic breakup—we just drifted apart creatively. I wanted to pursue other artistic directions, and eventually, we all moved on to different projects. It wasn’t personal. It was time.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>What inspired the band's quirky style and stage presence?</h3>
+            <div class="faq-content">
+              <p>We were always interested in doing something visually different—minimal but intense. I also think the awkwardness came naturally to me, and we leaned into that as part of our identity. The "big suit" was partly about exaggerating and poking fun at showbiz conventions.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Was David Byrne's autism ever a factor in the band dynamic?</h3>
+            <div class="faq-content">
+              <p>I wasn’t diagnosed back then, but I now recognize that I was on the spectrum. It probably shaped how I communicated—or didn’t communicate. I could be intense or distant. But it also helped me focus deeply on the music, the rhythm, the structures.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>How did you come up with the name "Talking Heads"?</h3>
+            <div class="faq-content">
+              <p>We saw the term in a TV guide. It referred to people talking on-screen without any action—just heads talking. It felt fitting for a band that was cerebral and visual at the same time.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Did the band think of themselves as political?</h3>
+            <div class="faq-content">
+              <p>Not overtly, but yes, some songs are definitely a response to social conditions—like "Life During Wartime." We didn’t preach. We observed and reflected with a kind of detached intensity.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+          <div class="faq-item">
+            <h3>Do you keep in touch with the other band members?</h3>
+            <div class="faq-content">
+              <p>We’ve had our ups and downs, but there’s a shared history and respect. We recently reunited for the *Stop Making Sense* remaster event, and it was meaningful to all of us.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div><!-- End Faq item-->
+
+        </div>
+
+      </div><!-- End Faq Column-->
+
+    </div>
+
+  </div>
+
+</section><!-- /FAQ Section -->
+
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Got questions, thoughts, or just want to share your Talking Heads love? Reach out to Rosa, the creator of this fanpage!</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-geo-alt"></i>
+          <h3>Location</h3>
+          <p>Taipei, Taiwan</p>
+        </div>
+      </div><!-- End Info Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-telephone"></i>
+          <h3>Phone</h3>
+          <p>+886 912 345 678</p>
+        </div>
+      </div><!-- End Info Item -->
+
+      <div class="col-lg-3 col-md-6">
+        <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+          <i class="bi bi-envelope"></i>
+          <h3>Email</h3>
+          <p>rosa@talkingheadsfansite.com</p>
+        </div>
+      </div><!-- End Info Item -->
+
+    </div>
+
+    <div class="row gy-4 mt-1">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3625.0550506617523!2d121.565426!3d25.033964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abbd202fd355%3A0x7697d2192ee0d81c!2sTaipei%2C%20Taiwan!5e0!3m2!1sen!2stw!4v1715133873578!5m2!1sen!2stw" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+
+
+  </main>
+  
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+  
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Talking Heads Fanpage</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>Taipei, Taiwan</p>
+            <p class="mt-3"><strong>Roleplay Contact:</strong> <span>talkingheads.rp@fanmail.com</span></p>
+            <p><strong>Submissions:</strong> <span>fanworks@talkingheadsfanpage.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Meet the Band</a></li>
+            <li><a href="#">Fan Gallery</a></li>
+            <li><a href="#">Submit Art/Fics</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Extras</h4>
+          <ul>
+            <li><a href="#">Roleplay Guidelines</a></li>
+            <li><a href="#">Fan Content Rules</a></li>
+            <li><a href="#">Community Forum</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Credits</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Send Fan Art or Fan Fiction</h4>
+          <p>Want to share your creations? Fill out the form below to submit fan works or roleplay inquiries!</p>
+          <form action="forms/fansubmit.php" method="post" class="php-email-form">
+            <div class="newsletter-form">
+              <input type="email" name="email" placeholder="Your Email" required>
+              <input type="text" name="subject" placeholder="Subject (e.g. 'Fanart Submission')" required>
+            </div>
+            <textarea name="message" rows="4" placeholder="Message or description of your submission" required></textarea>
+            <div class="mt-2">
+              <input type="submit" value="Send">
+            </div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Thank you for your submission!</div>
+          </form>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Talking Heads Fanpage</strong><span>. All Rights Reserved.</span></p>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  
+  </footer>
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
